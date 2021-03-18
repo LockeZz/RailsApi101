@@ -5,7 +5,7 @@ module ExceptionHandler
     # Define custom error subclasses - rescue catches 'Standard Errors'
     class AuthenticationErrror < StandardError; end 
     class MissingToken < StandardError; end 
-    class Invalidtoken < StandardError; end
+    class InvalidToken < StandardError; end
 
     included do 
         #Define custom handlers
